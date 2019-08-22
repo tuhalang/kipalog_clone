@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<header>	
+		<div class="middle">
+			<!--Logo left-->
+			<a href="home.html" class="logo">
+				Kipalog
+			</a>
+			<!--search field-->
+			<div class="search-box">
+			<form  class="search-text" method="GET" action="/search">
+				<input type="text" placeholder="type to search">
+			</form>
+			</div>
+			<div class="right-menu">
+				<!--New post-->
+				<a href="writing.html" class="new-post">
+					<i class="edit-icon"></i>
+					<strong>New Post</strong>
+				</a>
+				<!--Home-->
+				<a class="home" href="home.html">
+					<i class="home-icon"></i>
+					<strong>Home</strong>
+				</a>
+				<!--Post store-->
+				<a class="store" href="log.html">
+					<i class="store-icon"></i>
+					<strong>Post Store</strong>
+				</a>
+				<!--Notification-->
+				<i class="bell-icon" >...</i>
+				<!--Profile-->
+				<div class="profile" >
+					<button onclick="myFunction()" class="dropbtn">
+						Avatar
+						<i class="dropdown-icon"></i>
+					</button>
+					<div id="myDropdown" class="profile-dropdown" style="overflow: visible;">
+						<a href="account.html">
+							<i class="user-icon"></i>
+							My Account
+						</a>
+						<a href="setting.html">
+							<i class="setting-icon"></i>
+							Setting
+						</a>
+						<a href="#">
+							<i class="signout-icon"></i>
+							Sign Out
+						</a>
+					</div>
+					<script>
+
+						function myFunction() {
+							document.getElementById("myDropdown").classList.toggle("show");
+						}
+
+						window.onclick = function(event) {
+							if (!event.target.matches('.dropbtn')) {
+								var dropdowns = document.getElementsByClassName("dropdown-content");
+								var i;
+								for (i = 0; i < dropdowns.length; i++) {
+									var openDropdown = dropdowns[i];
+									if (openDropdown.classList.contains('show')) {
+										openDropdown.classList.remove('show');
+									}
+								}
+							}
+						}
+					</script>
+				</div>
+			</div>								
+		</div>		
+	</header>
+	<main class="master-body">
+		<div class="page">
+			<div  class="caption">
+				<h4  class="cap">
+					<i class="quote-left-icon"></i>
+					<span class="content">
+						Rdives of Optimization: Rdive 1: Don't do it. Rdive 2 (for experts only): Don't do it yet.
+					</span>
+					<i class="quote-right-icon"></i>
+					<span class="author"> — Michael A. Jacksno
+					</span>
+				</h4>
+			</div>
+			<div class="talubar-menu">
+				<a class="most-view-post">Most View Post</a>
+				<a class="newest-post">Newest Post</a>
+			</div>
+			<div class="right-column">
+				<!--Profile-->
+				<div class="meta-profile">
+					<div class="left-avatar">
+						<a href="#"></a>
+					</div>
+					<div class="right-name">
+						<a href="#" class="name"></a>
+					</div>
+					<div class="extra">
+						<a href="#">Totals Post</a>
+						<a href="#">Following</a>
+					</div>
+				</div>
+				<!--Hot tag-->
+				<div class="hot-tag">
+					<p  class="suggest-title">
+						<i class="tags-icon"></i>
+						Hot Tags
+					</p>
+					<div class="meta-tag">
+						<a href="#">Some Thing</a>
+						<a href="#">Some Thing</a>
+						<a href="#">Some Thing</a>
+						<a href="#">Some Thing</a>
+						<a href="#">Some Thing</a>
+					</div>
+				</div>
+				<div class="sticky">
+					<!--User ranking-->
+					<div class="ranking">
+						<p class="ranking-users-title">
+							<i class="cup-icon"></i>
+							Ranking User
+						</p>
+					</div>
+					<div class="divst-user">
+						<div class="user">
+							<div  class="user-avatar">
+								<img src="#">
+								<a href="#" class="name"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+
+	</footer>
+</body>
+</html>
