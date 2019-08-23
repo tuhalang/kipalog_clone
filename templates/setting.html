@@ -6,21 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/setting.css">
     <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Cài đặt</title>
 </head>
 
 <body>
-    <div class="topnav" id="my-topnav">
+    <div class="topnav">
         <a href="#" class="left">Kypalog</a>
         <input class="left" type="text" placeholder="Tìm kiếm" />
         <span class="right icon"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-        <span class="right avatar"><img src="../static/images/1.jpeg" width="40px" height="40px" alt="" /></span>
-        <span class="right icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
-        <a href="#" class="right"><i class="fa fa-bookmark" aria-hidden="true"></i> <span class="text">Kho log</span></a>
+        <div class="dropdown right">
+            <div class="dropbtn right">
+                <span class="right avatar"><img src="../static/images/1.jpeg" width="40px" height="40px"
+                        alt="" /></span>
+                <span class="right icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+            </div>
+            <div class="drop-content">
+                <a href=""><i class="fa fa-user" aria-hidden="true"></i> <span class="text">Trang cá nhân</span></a>
+                <a href=""><i class="fa fa-cog" aria-hidden="true"></i> <span class="text">Cài đặt</span></a>
+                <a href=""><i class="fa fa-sign-out" aria-hidden="true"></i> <span class="text">Đăng xuất</span></a>
+            </div>
+        </div>
+        <a href="#" class="right"><i class="fa fa-bookmark" aria-hidden="true"></i> <span class="text">Kho
+                log</span></a>
         <a href="#" class="right"><i class="fa fa-home" aria-hidden="true"></i> <span class="text">Trang chủ</span></a>
-        <a href="#" class="right"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <span class="text">Viết bài</span></a>
+        <a href="#" class="right"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <span class="text">Viết
+                bài</span></a>
+    </div>
+
+    <div class="container">
+        <div class="menu left">
+            <div class="menu-btn" id="account-btn">
+                <span>Tài khoản</span>
+            </div>
+            <div class="menu-btn" id="password-btn">
+                <span>Password</span>
+            </div>
+        </div>
+        <div class="content left">
+            <form>
+                <div>
+                    <span>Ảnh đại diện</span>
+                </div>
+                <div>
+                    <label>Tên</lable>
+                    <input type="text" value="Phạm Hùng">
+                </div>
+                <div>
+                    <label>Nickname</label>
+                </div>
+                <div>
+                    <label>Email</label>
+                </div>
+            </form>
+
+        </div>
     </div>
 </body>
 

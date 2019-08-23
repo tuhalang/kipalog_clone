@@ -221,3 +221,57 @@ table {
 .topnav .avatar img {
     border-radius: 100%;
 }
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.drop-content {
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 50px;
+    overflow: visible;
+    position: absolute;
+}
+
+.drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+
+/* END NAVBAR */
+
+
+/* CONTAINER START */
+
+.container {
+    padding: 50px 200px;
+}
+
+.menu {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-btn {
+    padding: 15px 0px;
+    border-right: 1px solid #4f6a85;
+    padding-right: 150px;
+    cursor: pointer;
+}
