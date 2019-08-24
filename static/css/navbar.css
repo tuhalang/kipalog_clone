@@ -1,0 +1,450 @@
+/* Reset css */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: #2c4762;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    border-radius: 2px;
+    height: 20px;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    border-right: 1px solid #4f6a85;
+}
+
+.topnav input {
+    height: 30px;
+    display: block;
+    background-color:#d9d9d9;
+    font-size: 17px;
+    margin: 5px 20px;
+    border: none;
+    border-radius: 15px;
+    padding: 0px 20px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover ,.right.icon.noti:hover{
+    background-color: rgb(63, 113, 160);
+}
+
+.topnav input:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: block;
+    display: block;
+    border: none;
+    color: beige;
+    padding: 10px 20px;
+}
+
+.topnav .text {
+    padding-left: 10px;
+}
+
+.topnav .avatar {
+    display: block;
+    border: none;
+    color: beige;
+    padding-left: 30px;
+}
+
+.topnav .avatar img {
+    border-radius: 100%;
+}
+
+.posts-body{
+    margin: auto;
+    text-align: left;
+}
+
+.dropbtn .body{
+    background-color: white;
+}
+
+.dropbtn {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    top: 60px;
+    border-radius: 2px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
+.dropdown-content .noti-header{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+       color: rgba(0,0,0,0.6);
+        font-size: 1em;
+     padding: 1em;
+     
+}
+.dropdown-content .noti-bottom{
+    padding: 1em;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    
+     
+}
+
+.dropdown-content .noti-header a{
+      color: rgba(0,0,0,0.6);
+        font-size: 1em;
+}
+
+
+.dropdown-content a {
+    border-right: none;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  
+}
+
+
+.show {
+    display:block;
+}
+
+
+
+/* right more information */
+.row{
+    padding: 2% 16%;
+    display: inline-block;
+    margin: 0;
+}
+
+.posts{
+    box-sizing: border-box;
+    padding: 0 2%;
+    float: left;
+    width: 70%;
+    height: 700px;
+}
+
+.info{
+    box-sizing: border-box;
+    padding: 0 2%;
+    float: right;
+    width: 30%;
+}
+
+.info .row {
+    font-size: 1rem;
+    border-bottom: 1px solid;
+    border-color: #E6E6FA;
+    min-width: 209px;
+    padding-bottom: 1em;
+}
+
+.info .profile {
+    padding-top: 30px;
+    height: 120px;
+}
+
+.avatar-image {
+    float: left;
+}
+
+.avatar-image img {
+    border-radius: 50%;
+}
+
+.right-image {
+    padding-top: 30px;
+    float: right;
+    display: block;
+    max-width: 100%;
+}
+
+.right-image #caption {
+
+    text-decoration: none;
+    color: #00A86B;
+}
+
+.right-image #extra a {
+
+    text-decoration: none;
+    color: #00A86B;
+}
+
+.fa-tags {
+    color: #FF8C69
+}
+
+#suggest-title, #authors-title {
+    height: 30px;
+    font-family: "OpenSans", sans-serif;
+    font-size: 1.05em;
+    font-style: italic;
+}
+
+.hot-tags .meta-tags {
+    max-width: 100%;
+}
+
+.hot-tags .meta-tags .label {
+    display: inline-block; text-decoration : none;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 1px;
+    text-decoration: none;
+}
+
+.fa-trophy {
+    color: #FFD700;
+}
+
+.list-author .item .avatar-author {
+    width: 1.5em;
+    height: 1.5em;
+    float: left;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.list-author .item .avatar-author img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75em;
+}
+
+.list-author {
+    display: block;
+}
+
+.list-author .item {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+.list-author .item a {
+    text-decoration: none;
+    color: #00A86B;
+}
+
+/* left post */
+
+.quote{
+    text-align: left;
+    font-family: "OpenSans", sans-serif;
+    padding: 1em;
+    color: rgba(0,0,0,0.6);
+    font-size: .9em;
+    height: 1.7em;
+    line-height: 1.7em;
+}
+
+.author{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.body .dropbtn{
+    background-color: #4CAF50;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+}
+
+
+
+
+
+
+
