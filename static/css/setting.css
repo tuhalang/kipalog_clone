@@ -4,7 +4,7 @@
     display: grid;
     padding: 50px 200px;
     font-size: 20px;
-    grid-template-columns: auto auto auto auto
+    grid-template-columns: 30% 70%;
 }
 
 .menu {
@@ -31,13 +31,13 @@
 .content-account {
     display: block;
     padding-left: 100px;
-    grid-column: 2/5;
+    grid-column: 2/2;
 }
 
 .content-password {
     display: none;
     padding-left: 100px;
-    grid-column: 2/5;
+    grid-column: 2/2;
 }
 
 .info {
@@ -69,7 +69,6 @@
 
 .icon {
     padding: 10px;
-    position: absolute;
 }
 
 .input-field {
