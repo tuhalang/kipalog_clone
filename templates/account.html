@@ -1,138 +1,177 @@
 <!DOCTYPE unspecified PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
-<title>Name</title>
-<link rel="stylesheet" href="../static/css/account_style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-	crossorigin="anonymous">
-<link
-	href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap"
-	rel="stylesheet">
+    <title>Name</title>
+    <link rel="stylesheet" href="../static/css/account_style.css">
+    <link rel="stylesheet" href="../static/css/header_d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	<header>
-	<div class="transparent">
-		<div class="middle-header">
-			<span class="left-menu">
-				<p class="logo-item">
-					<a href="/"> <img class="image-logo"
-						src="../static/img/kipalog.svg">
-					</a>
-				</p>
-				<form id="search-form" method="GET" action="/search">
+    <header>
+        <div class="transparent">
+            <div class="middle-header">
+                <span class="left-menu">
+					<p class="logo-item">
+						<a href="/"> <img class="image-logo"
+							src="../static/img/kipalog.svg">
+						</a>
+					</p>
+					<form id="search-form" method="GET" action="/search">
 						<input id="search-field" name="q" class="focus-popup" type="text"
 							placeholder="Tìm kiếm" autocomplete="off"
-							data-content="<span>Nhập từ và </span><div class='enter-button'><span>enter </span><i class='clockwise rotated level down icon'></i></div><span> để bắt đầu tìm kiếm</span>"
-							data-position="bottom center" data-offset="7">
-				</form>
-			</span> <span class="right-menu">
-				<ul class="main-menu">
-					<li class="dropdown-element newpost"><a class="element-drop"
-						href="#"> <i class="far fa-edit"></i> <strong>New
-								post</strong> <i class="fas fa-caret-down"></i>
-					</a>
-						<div class="dropdown-content">
-							<a class="item">Bản nháp</a>
-							<a class="item">TIL</a>
-						</div></li>
-					<li class="home"><a href="#"> <i class="fas fa-home"></i>
-							<strong>Home</strong>
-					</a></li>
-					<li class="log"><a href="#"> <i class="fas fa-bookmark"></i>
-							<strong>Log</strong>
-					</a></li>
-					<li class="bell"><a href="#"> <i class="fas fa-bell"></i>
-					</a></li>
-					<li class="dropdown-element account"><a href="#"
-						class="element-drop">
-							<div class="avatar-account">
-								<img
-									src="../static/img/67878362_2440591969334741_7294911603323961344_n.jpg">
-							</div> <i class="fas fa-caret-down"></i>
-					</a>
-						<div class="dropdown-content">
-							<div class="item">Profile</div>
-							<div class="item">Settings</div>
-						</div></li>
-				</ul>
-			</span>
-		</div>
-	</div>
-	</header>
-	<div class="clearfix"></div>
-	<div class="master-body">
-		<div class="center-aligned">
-			<div class="main-frame">
-				<div class=" col left-profile">
-					<div class="avatar">
-						<img
-							src="../static/img/67878362_2440591969334741_7294911603323961344_n.jpg">
-					</div>
-					<div class="basic-segment">
-						<strong id="name">Trần Điệp</strong>
-						<div id="icon">
-							<i class="fab fa-facebook-f"></i>
-						</div>
-					</div>
-					<div class="three-info">
-						<div class="column kipalog">
-							<p class="smart-stat">
-								<i class="far fa-comment"></i>
-							</p>
-							<p class="pc-stat">Kipalog</p>
-							<a class="popup" id="contribution"
-								data-content="Tổng số lượt bình luận trong tất cả các bài viết"
-								data-position="bottom center">0</a>
-						</div>
-						<div class="column comment">
-							<p class="smart-stat">
-								<i class="far fa-thumbs-up"></i>
-							</p>
-							<p class="pc-stat">Comment</p>
-							<a class="popup" id="contribution"
-								data-content="Tổng số lượt xem trên tất cả các bài viết"
-								data-position="bottom center">0</a>
-						</div>
-						<div class="column views">
-							<p class="smart-stat">
-								<i class="far fa-eye"></i>
-							</p>
-							<p class="pc-stat">Views</p>
-							<a class="popup" id="contribution"
-								data-content="Tổng số lượt kipalog trong tất cả bài viết"
-								data-position="bottom center">0</a>
-						</div>
-					</div>
-				</div>
-				<div class=" col right-posts">
-					<div class="doughnutSumary">
-						<div class="doughnutSumaryTitle">Bài viết:</div>
-						<div class="doughnutSumaryNumber">0</div>
-					</div>
-				</div>
-			</div>
-			<div class="diliver-line">
-				<div class="horizontal">
-					<hr id="line-one">
-					<i class="fas fa-angle-down"></i>
-					<hr id="line-two">
-				</div>
-			</div>
-			<div class="popular-post"></div>
-			<div class="clearfix"></div>
-			<footer>
-			<div class="middle-container">
-				<div class="left-menu">
-					<a href="#">Điều khoản</a> <a href="#">Phản hồi</a> <a href="#">Yêu
+							data-content="<span>Nhập từ và </span>
+                <div class='enter-button'><span>enter </span><i class='clockwise rotated level down icon'></i></div><span> để bắt đầu tìm kiếm</span>" data-position="bottom center" data-offset="7">
+                </form>
+                </span> <span class="right-menu">
+					<ul class="main-menu">
+						<li class="dropdown-element newpost"><a class="element-drop"
+							href="#"> <i class="far fa-edit"></i> <strong>New
+									post</strong> <i class="fas fa-caret-down"></i>
+						</a>
+							<div class="dropdown-content">
+								<a class="item">Bản nháp</a> <a class="item">TIL</a>
+							</div></li>
+						<li class="home"><a href="#"> <i class="fas fa-home"></i>
+								<strong>Home</strong>
+						</a></li>
+						<li class="log"><a href="#"> <i class="fas fa-bookmark"></i>
+								<strong>Log</strong>
+						</a></li>
+						<li class="bell"><a href="#"> <i class="fas fa-bell"></i>
+						</a></li>
+						<li class="dropdown-element account"><a href="#"
+							class="element-drop">
+								<div class="avatar-account">
+									<img
+										src="../static/img/67878362_2440591969334741_7294911603323961344_n.jpg">
+								</div> <i class="fas fa-caret-down"></i>
+						</a>
+							<div class="dropdown-content">
+								<a class="item" href="#"><i class="fas fa-user-alt"></i> Profile</a>
+								<a class="item" href="setting.html"><i class="fas fa-user-cog"></i> Settings</a>
+								<a class="item" href="login.html"><i class="fas fa-sign-out-alt"></i> Log out</a>
+							</div></li>
+					</ul>
+				</span>
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"></div>
+    <div class="master-body">
+        <div class="center-aligned">
+            <div class="main-frame">
+                <div class=" col left-profile">
+                    <div class="avatar">
+                        <img src="../static/img/67878362_2440591969334741_7294911603323961344_n.jpg">
+                    </div>
+                    <div class="basic-segment">
+                        <strong id="name">Trần Điệp</strong>
+                        <div id="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                    <div class="three-info">
+                        <div class="column kipalog">
+                            <p class="smart-stat">
+                                <i class="far fa-comment"></i>
+                            </p>
+                            <p class="pc-stat">Kipalog</p>
+                            <a class="popup" id="contribution" data-content="Tổng số lượt bình luận trong tất cả các bài viết" data-position="bottom center">0</a>
+                        </div>
+                        <div class="column comment">
+                            <p class="smart-stat">
+                                <i class="far fa-thumbs-up"></i>
+                            </p>
+                            <p class="pc-stat">Comment</p>
+                            <a class="popup" id="contribution" data-content="Tổng số lượt xem trên tất cả các bài viết" data-position="bottom center">0</a>
+                        </div>
+                        <div class="column views">
+                            <p class="smart-stat">
+                                <i class="far fa-eye"></i>
+                            </p>
+                            <p class="pc-stat">Views</p>
+                            <a class="popup" id="contribution" data-content="Tổng số lượt kipalog trong tất cả bài viết" data-position="bottom center">0</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col right-posts">
+                    <div class="doughnutSumary">
+                        <div class="doughnutSumaryTitle">Bài viết:</div>
+                        <div class="doughnutSumaryNumber">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="diliver-line">
+                <div class="horizontal">
+                    <hr id="line-one">
+                    <i class="fas fa-angle-down"></i>
+                    <hr id="line-two">
+                </div>
+            </div>
+            <div class="popular-post">
+                <div class="feed">
+                    <div class="list-feed">
+                        <div class="item-feed">
+                            <a class="left avatar-feed" href="#"> <img src="../static/img/67878362_2440591969334741_7294911603323961344_n.jpg">
+                            </a> <a class=" right feed-date" href="#"> 3 <i
+								class="fas fa-bookmark"></i> 0 <i class="fas fa-comment"></i>
+							</a>
+                            <div class="content-feed">
+                                <div class="header-feed">
+                                    <a href="#">Video: Code HTML/CSS nhanh, dể bảo trì hơn với
+										BEM</a>
+                                    <div class="tags">
+                                        <a href="#" class="label">css</a> <a href="#" class="label">javascript</a>
+                                        <a href="#" class="label">python</a> <a href="#" class="label">javascript</a>
+                                        <a href="#" class="label">python</a>
+                                    </div>
+                                </div>
+                                <p class="detail-feed">Nếu team cắt HTML/CSS của bạn chưa có một tiêu chuẩn chung nào để làm việc hợp rơ với nhau thì hãy thử qua (Link) (Block, Element, Modifier). Nếu ...</p>
+                                <div class="time-feed">
+                                    <a href="#">Trần Điệp</a> viết 2 tháng trước
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-feed">
+                            <a class="left avatar-feed" href="#"> <img src="https://avatars.githubusercontent.com/u/5398914?v=3">
+                            </a> <a class=" right feed-date" href="#"> 3 <i
+								class="fas fa-bookmark"></i> 0 <i class="fas fa-comment"></i>
+							</a>
+                            <div class="content-feed">
+                                <div class="header-feed">
+                                    <a href="#">Video: Code HTML/CSS nhanh, dể bảo trì hơn với
+										BEM</a>
+                                    <div class="tags">
+                                        <a href="#" class="label">css</a> <a href="#" class="label">javascript</a>
+                                        <a href="#" class="label">python</a> <a href="#" class="label">javascript</a>
+                                        <a href="#" class="label">python</a>
+                                    </div>
+                                </div>
+                                <p class="detail-feed">Nếu team cắt HTML/CSS của bạn chưa có một tiêu chuẩn chung nào để làm việc hợp rơ với nhau thì hãy thử qua (Link) (Block, Element, Modifier). Nếu ...</p>
+                                <div class="time-feed">
+                                    <a href="#">Trần Điệp</a> viết 2 tháng trước
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <footer>
+                <div class="middle-container">
+                    <div class="left-menu">
+                        <a href="#">Điều khoản</a> <a href="#">Phản hồi</a> <a href="#">Yêu
 						cầu</a> <a href="#">Fanpage</a>
-				</div>
-				<p>Copyright © 2018 Kipalog</p>
-			</div>
-			</footer>
-		</div>
-	</div>
+                    </div>
+                    <p>Copyright © 2018 Kipalog</p>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
+
 </html>

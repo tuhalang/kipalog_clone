@@ -1,300 +1,255 @@
 @charset "UTF-8";
-
-body, html {
-	margin: 0;
-	padding: 0;
-	font-family: 'Lato', sans-serif;
-	font-family: 'Roboto', sans-serif;
+body,
+html {
+    margin: 0;
+    padding: 0;
 }
 
 .clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
+    content: " ";
+    display: table;
+    clear: both;
 }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
 /*--------------header-----------------*/
-header {
-	width: 100%;
-}
 
-.transparent {
-	padding: 0 8% 0 8%;
-	background-color: #2c4762;
-	height: 66px;
-	z-index: 999;
-}
 
-.left-menu {
-	float: left;
-	width: 40%;
-	padding-top: 5px;
-}
-
-.right-menu {
-	float: right;
-}
-
-.main-menu {
-	list-style: none;
-	display: inline-block;
-}
-
-.main-menu li {
-	display: inline-block;
-	margin-right: 20px;
-}
-
-.newpost, .home, .log, .bell {
-	height: 70%;
-}
-
-.main-menu li a {
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 14px;
-}
-
-.newpost, .home, .log, .bell, .account i {
-	positon: relative;
-	top: 50%;
-	transform: translate(0, -50%);
-}
-.main-menu .dropdown-element .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: white;
-	min-width: 100px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	border-radius:5px;
-	z-index: 1;
-	padding-bottom:10px;
-}
-.main-menu li:hover a,
-.main-menu li:active a,
-.main-menu li:focus a{
-	color:deepskyblue;
-}
-.dropdown-content .item:hover, .dropdown-content .item:active {
-	background-color: rgb(247, 245, 245);
-	border: none;
-	color: deepskyblue;
-}
-
-.dropdown-content .item {
-	color: black;
-	padding: 3px 20px;
-	padding-left: 10px;
-	text-decoration: none;
-	font-size: 14px;
-	text-align: left;
-	display: block;
-	transition:overflow 2s;
-}
-.main-menu li:hover .dropdown-content {
-	display: block;
-}
-.dropdown-content:hover{
-	display:block;
-}
-.main-menu .avatar-account {
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	display: inline-block;
-}
-
-.account a i {
-	display: inline-block;
-}
-
-.main-menu .avatar-account img {
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-}
-
-.logo-item, #search-form {
-	display: inline-block;
-}
-
-.logo-item .image-logo {
-	width: 100px;
-}
-
-#search-form {
-	width: 50%;
-}
-
-#search-form input {
-	border-radius: 15px;
-	padding: 3px 10px 3px 10px;
-	width: 100%;
-	border: none;
-	background-color: #435f7a;
-	font-size: 16px;
-}
-
-#search-form input:focus {
-	outline: none;
-}
-
-#search-form input:focus {
-	background-color: #ffffff;
-}
 /*body=========================*/
+
 @media all and (max-width: 1368px) {
-	.center-aligned .main-frame {
-		position: relative;
-		left: 8%;
-		width: 84%;
-		text-align: center;
-		display: table;
-	}
-	.main-frame .left-profile {
-		width: 30%;
-		display: table-cell;
-	}
-	.main-frame .right-posts {
-		width: 30%;
-		display: table-cell;
-	}
-	.avatar {
-		position: relative;
-		left: 50%;
-		transform: translate(-50%);
-		margin-top: 100px;
-		border-radius: 65px;
-		border: 3px #ffffff;
-		border-style: solid;
-		width: 120px;
-		height: 120px;
-		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12)
-			!important;
-		margin-top: 100px;
-		transform: translate(-50%);
-	}
-	.avatar img {
-		border-radius: 60px;
-		width: 120px;
-		height: 120px;
-	}
-	.basic-segment {
-		margin: 14.4px 0 14.4px 0;
-	}
-	#name {
-		font-size: 1.5em;
-	}
-	.basic-segment #icon {
-		position: relative;
-		left: 50%;
-		transform: translate(-50%);
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
-		border: 3px #E6E6FA;
-		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12)
-			!important;
-	}
-	.basic-segment #icon i {
-		padding-top: 6px;
-	}
-	.three-info {
-		width: 100%;
-		position: relative;
-		left: 50%;
-		transform: translate(-50%);
-		display: grid;
-		grid-template-columns: auto auto auto;
-	}
-	.three-info .comment {
-		border-left: 1px solid #E6E6FA;
-		border-right: 1px solid #E6E6FA;
-	}
-	.three-info .column a {
-		font-size: 20px;
-	}
-	.doughnutSumaryTitle {
-		font-size: 1.5rem;
-	}
-	.doughnutSumaryNumber {
-		font-size: 2.5rem;
-	}
-	.smart-stat {
-		visibility: hidden;
-	}
-	.diliver-line {
-		padding: 50px 8% 0 8%;
-		margin-bottom: 30px;
-	}
-	.horizontal hr {
-		width: 100%;
-	}
-	.horizontal i {
-		text-align: center;
-	}
-	.horizontal {
-		display: grid;
-		grid-template-columns: 47% 6% 47%;
-	}
-	/* ================== footer==========*/
-	footer {
-		width: 100%;
-		height: 100px;
-	}
-	footer .middle-container {
-		margin: 0 8% 0 8%;
-		border-top: 1px solid;
-		border-color: #E6E6FA;
-		padding-top: 15px;
-		height: 100%;
-	}
-	footer .middle-container .left-menu {
-		width: 50%;
-		float: left;
-	}
-	footer .middle-container p {
-		float: right;
-		margin: 0;
-		padding-top: 5px;
-		font-size: 14px;
-		color: gray;
-	}
-	.middle-container a {
-		text-decoration: none;
-		color: gray;
-		margin-left: 3%;
-		font-size: 14px;
-	}
+    .center-aligned .main-frame {
+        position: relative;
+        left: 8%;
+        width: 84%;
+        text-align: center;
+        display: table;
+    }
+    .main-frame .left-profile {
+        width: 30%;
+        display: table-cell;
+    }
+    .main-frame .right-posts {
+        width: 30%;
+        display: table-cell;
+    }
+    .avatar {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 100px;
+        border-radius: 65px;
+        border: 3px #ffffff;
+        border-style: solid;
+        width: 120px;
+        height: 120px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12) !important;
+        margin-top: 100px;
+        transform: translate(-50%);
+    }
+    .avatar img {
+        border-radius: 60px;
+        width: 120px;
+        height: 120px;
+    }
+    .basic-segment {
+        margin: 14.4px 0 14.4px 0;
+    }
+    #name {
+        font-size: 1.5em;
+    }
+    .basic-segment #icon {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        border: 3px #E6E6FA;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12) !important;
+    }
+    .basic-segment #icon i {
+        padding-top: 6px;
+    }
+    .three-info {
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .three-info .comment {
+        border-left: 1px solid #E6E6FA;
+        border-right: 1px solid #E6E6FA;
+    }
+    .three-info .column a {
+        font-size: 20px;
+    }
+    .doughnutSumaryTitle {
+        font-size: 1.5rem;
+    }
+    .doughnutSumaryNumber {
+        font-size: 2.5rem;
+    }
+    .smart-stat {
+        visibility: hidden;
+    }
+    .diliver-line {
+        padding: 50px 8% 0 8%;
+        margin-bottom: 30px;
+    }
+    .horizontal hr {
+        width: 100%;
+    }
+    .horizontal i {
+        text-align: center;
+    }
+    .horizontal {
+        display: grid;
+        grid-template-columns: 47% 6% 47%;
+    }
+    /*---------------------popular-post------------*/
+    .popular-post {
+        position: relative;
+        left: 8%;
+        width: 84%;
+    }
+    .logs .feed .list-feed .tem-feed .avatar-feed {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        display: block;
+        margin-top: .3em;
+        margin-right: 1em;
+        vertical-align: middle;
+        margin-right: 1em;
+    }
+    .avatar-feed img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    .logs .feed {
+        margin-top: 1em;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+    .logs .feed .list-feed {
+        margin-top: 2em;
+    }
+    .list-feed .item-feed {
+        padding: 0.5em;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+    .list-feed .item-feed {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .list-feed .item-feed:first-child {
+        border-top-width: 0px;
+    }
+    .list-feed .item-feed .content-feed {
+        margin-top: 0.3em;
+        margin-left: 3em;
+        margin-right: 4em;
+        display: block;
+    }
+    .content-feed .header-feed>a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #00b5ad;
+    }
+    .list-feed .item-feed .content-feed .time-feed {
+        font-size: 12px;
+    }
+    .time-feed a {
+        text-decoration: none;
+        color: #00b5ad;
+    }
+    .feed-date fas {
+        display: inline-block;
+    }
+    .feed-date {
+        font-size: 12px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .label {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #E6E6FA;
+        border-radius: 5px;
+        padding: 5px 10px 5px 10px;
+        margin: 1px;
+        text-decoration: none;
+    }
+    /* ================== footer==========*/
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+    footer .middle-container {
+        margin: 0 8% 0 8%;
+        border-top: 1px solid;
+        border-color: #E6E6FA;
+        padding-top: 15px;
+        height: 100%;
+    }
+    footer .middle-container .left-menu {
+        width: 50%;
+        float: left;
+    }
+    footer .middle-container p {
+        float: right;
+        margin: 0;
+        padding-top: 5px;
+        font-size: 14px;
+        color: gray;
+    }
+    .middle-container a {
+        text-decoration: none;
+        color: gray;
+        margin-left: 3%;
+        font-size: 14px;
+    }
 }
 
 @media all and (max-width: 768px) {
-	.pc-stat {
-		visibility: hidden;
-	}
-	.smart-stat {
-		visibility: visible;
-	}
-	.main-frame {
-		display: block;
-	}
-	.right-posts, .left-profile {
-		display: block !important;
-		width: 100% !important;
-	}
-	.right-posts {
-		height: 300px;
-	}
-	.doughnutSumary {
-		position: relative;
-		top: 50%;
-		transform: translate(0, -50%);
-	}
-	#search-form{
-		display:none;
-	}
+    .pc-stat {
+        visibility: hidden;
+    }
+    .smart-stat {
+        visibility: visible;
+    }
+    .main-frame {
+        display: block;
+    }
+    .right-posts,
+    .left-profile {
+        display: block !important;
+        width: 100% !important;
+    }
+    .right-posts {
+        height: 300px;
+    }
+    .doughnutSumary {
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    #search-form {
+        display: none;
+    }
 }
-@media all and (max-width: 992px) {
-	.main-menu li strong,.main-menu .fa-caret-down{
-		display:none;
-	}
-}
+
+@media all and (max-width: 992px) {}
