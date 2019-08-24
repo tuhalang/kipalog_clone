@@ -433,17 +433,99 @@ table {
     font-style: italic;
 }
 
-.body .dropbtn{
-    background-color: #4CAF50;
-                color: white;
-                padding: 16px;
-                font-size: 16px;
-                border: none;
-                cursor: pointer;
+.tab {
+    border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
 }
 
 
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.item-body{
+    padding: 10px;
+    border-bottom: 1px solid;
+}
 
+.item-body a{
+    text-decoration: none;
+
+}
+
+.item-body .item-right{
+    padding-top: 10px;
+    float: right;
+}
+
+.item-body .header{
+    padding-top: 10px;
+    margin: 2px 10px;
+}
+
+.item-body .header .title{
+    font-size: 1.1em;
+}
+
+.item-body .item-mid .detail{
+    padding: 10px 50px;
+    line-height: 20px;
+}
+
+.item-body .item-mid .time{
+    padding: 0 50px;
+    font-size: 0.85em;
+}
+
+
+.item-body .item-mid .header .tags{
+    font-size: 0.8em;
+}
+
+.item-body .image{
+    border-radius: 50%; 
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.header .tags {
+    max-width: 100%;
+}
+
+.header .tags .label {
+    display: inline-block; text-decoration : none;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 1px;
+    text-decoration: none;
+}
 
 
 

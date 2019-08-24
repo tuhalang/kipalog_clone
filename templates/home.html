@@ -1,151 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="../static/css/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Cài đặt</title>
+    
 </head>
+
 <body>
-	<header>	
-		<div class="middle">
-			<!--Logo left-->
-			<a href="home.html" class="logo">
-				Kipalog
-			</a>
-			<!--search field-->
-			<div class="search-box">
-				<form  class="search-text" method="GET" action="/search">
-					<input type="text" placeholder="type to search">
-				</form>
-			</div>
-			<div class="right-menu">
-				<!--New post-->
-				<a href="writing.html" class="new-post">
-					<i class="edit-icon"></i>
-					<strong>New Post</strong>
-				</a>
-				<!--Home-->
-				<a class="home" href="home.html">
-					<i class="home-icon"></i>
-					<strong>Home</strong>
-				</a>
-				<!--Post store-->
-				<a class="store" href="log.html">
-					<i class="store-icon"></i>
-					<strong>Post Store</strong>
-				</a>
-				<!--Notification-->
-				<i class="bell-icon" >...</i>
-				<!--Profile-->
-				<div class="profile" >
-					<button onclick="myFunction()" class="dropbtn">
-						Avatar
-						<i class="dropdown-icon"></i>
-					</button>
-					<div id="myDropdown" class="profile-dropdown" style="overflow: visible;">
-						<a href="account.html">
-							<i class="user-icon"></i>
-							My Account
-						</a>
-						<a href="setting.html">
-							<i class="setting-icon"></i>
-							Setting
-						</a>
-						<a href="#">
-							<i class="signout-icon"></i>
-							Sign Out
-						</a>
-					</div>
-					<script>
+    <div class="topnav" id="my-topnav">
+        <a href="#" class="left">Kypalog</a>
 
-						function myFunction() {
-							document.getElementById("myDropdown").classList.toggle("show");
-						}
+        <input class="left" type="text" placeholder="Tìm kiếm"/>
+        <span class="right icon">
+            <i class="fa fa-caret-down" aria-hidden="true"></i>                     
+        </span> 
+        <div class="right avatar dropdowns">
+            <button value="myProfile" class="dropbtn"  >
+                <img class="dropbtn" src="../static/images/1.jpg" width="40px" height="40px" alt="" />
+            </button>
+            <div id="myProfile" class="dropdown-content prof">
+                <a href="account.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Trang cá nhân
+                </a>
+                <a href="setting.html">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Cài đặt
+                </a>
+                <a href="#">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Đăng xuất
+                </a>
+            </div>
 
-						window.onclick = function(event) {
-							if (!event.target.matches('.dropbtn')) {
-								var dropdowns = document.getElementsByClassName("dropdown-content");
-								var i;
-								for (i = 0; i < dropdowns.length; i++) {
-									var openDropdown = dropdowns[i];
-									if (openDropdown.classList.contains('show')) {
-										openDropdown.classList.remove('show');
-									}
-								}
-							}
-						}
-					</script>
-				</div>
-			</div>								
-		</div>		
-	</header>
-	<main class="master-body">
-		<div class="page">
-			<div  class="caption">
-				<h4  class="cap">
-					<i class="quote-left-icon"></i>
-					<span class="content">
-						Rdives of Optimization: Rdive 1: Don't do it. Rdive 2 (for experts only): Don't do it yet.
-					</span>
-					<i class="quote-right-icon"></i>
-					<span class="author"> — Michael A. Jacksno
-					</span>
-				</h4>
-			</div>
-			<div class="talubar-menu">
-				<a class="most-view-post">Most View Post</a>
-				<a class="newest-post">Newest Post</a>
-			</div>
-			<div class="right-column">
-				<!--Profile-->
-				<div class="meta-profile">
-					<div class="left-avatar">
-						<a href="#"></a>
-					</div>
-					<div class="right-name">
-						<a href="#" class="name"></a>
-					</div>
-					<div class="extra">
-						<a href="#">Totals Post</a>
-						<a href="#">Following</a>
-					</div>
-				</div>
-				<!--Hot tag-->
-				<div class="hot-tag">
-					<p  class="suggest-title">
-						<i class="tags-icon"></i>
-						Hot Tags
-					</p>
-					<div class="meta-tag">
-						<a href="#">Some Thing</a>
-						<a href="#">Some Thing</a>
-						<a href="#">Some Thing</a>
-						<a href="#">Some Thing</a>
-						<a href="#">Some Thing</a>
-					</div>
-				</div>
-				<div class="sticky">
-					<!--User ranking-->
-					<div class="ranking">
-						<p class="ranking-users-title">
-							<i class="cup-icon"></i>
-							Ranking User
-						</p>
-					</div>
-					<div class="divst-user">
-						<div class="user">
-							<div  class="user-avatar">
-								<img src="#">
-								<a href="#" class="name"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="footer">
+        </div>
+        <div  class="right icon dropdowns">
+            <button value="myNoti" class="dropbtn">
+              <i class="fa fa-bell fa-lg dropbtn" aria-hidden="true"></i>
+          </button>
+          <div id="myNoti" class="dropdown-content notif" >
+            <p class="noti-header">
+                <span>Thông báo</span>               
+            </p>
+            <div class="noti-content">
+                <a href="#">
+                    lòn hùng đã được 9 điểm oop
+                </a>
+                <a href="#">
+                    lòn nhân cũng vại =((
+                </a>
+            </div>
+            <p class="noti-bottom"></p>                    
+        </div>
+    </div>
+    <a href="#" class="right"><i class="fa fa-bookmark" aria-hidden="true"></i> <span class="text">Kho log</span></a>
+    <a href="#" class="right"><i class="fa fa-home" aria-hidden="true"></i> <span class="text">Trang chủ</span></a>
+    <a href="#" class="right"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <span class="text">Viết bài</span></a>
+</div>
 
-	</footer>
+<div class="row">
+    <div class="col posts" >
+        <h4 class="quote" style="height: 50px;">
+            <i class="fa fa-quote-left"></i>
+            <span> Perfection [in design] is achieved, not when there is nothing more to add, but when there is nothing left to take away. </span>
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+            <i class="author">— Antoine de Saint-Exupéry</i>
+        </h4>
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'top')">Bài viết hay</button>
+          <button class="tablinks" onclick="openCity(event, 'new')">bài viết mới</button>
+          <button class="tablinks" onclick="openCity(event, 'til')">#TIL</button>
+      </div>
+
+      <div id="top" class="tabcontent">
+          <div class="item-body">
+              <a href="#"><img class="image" src="../static/images/1.jpg" width="40px" height="40px" alt="" /></a>
+              <a href="#" class="item-right">
+                29
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                1
+                <i class="fa fa-comments-o" aria-hidden="true"></i>
+            </a>
+            <div class="item-mid">
+                <div class="header">
+                    <a class="title" href="#">NoSQL DBMS - 1000 câu hỏi vì sao</a>
+                    <div class="tags">
+                        <a href="#" class="label">NoSQL</a>
+                        <a href="#" class="label">Database</a>
+                    </div>
+                </div>
+                <div class="detail"> Hẳn anh em ở đây không xa lạ gì với NoSQL DBMS lẫn thế mạnh của nó. Nhưng liệu chúng ta có thực sự hiểu nó? Trước tiên, ta cùng điểm qua những thế ... </div>
+                <div class="time">
+                    <a href="#">Trần Văn Hoàng</a>
+                    viết 5 ngày trước
+                </div>
+            </div>
+        </div>
+        <div class="item-body">
+              <a href="#"><img class="image" src="../static/images/1.jpg" width="40px" height="40px" alt="" /></a>
+              <a href="#" class="item-right">
+                29
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                1
+                <i class="fa fa-comments-o" aria-hidden="true"></i>
+            </a>
+            <div class="item-mid">
+                <div class="header">
+                    <a class="title" href="#">NoSQL DBMS - 1000 câu hỏi vì sao</a>
+                    <div class="tags">
+                        <a href="#" class="label">NoSQL</a>
+                        <a href="#" class="label">Database</a>
+                    </div>
+                </div>
+                <div class="detail"> Hẳn anh em ở đây không xa lạ gì với NoSQL DBMS lẫn thế mạnh của nó. Nhưng liệu chúng ta có thực sự hiểu nó? Trước tiên, ta cùng điểm qua những thế ... </div>
+                <div class="time">
+                    <a href="#">Trần Văn Hoàng</a>
+                    viết 5 ngày trước
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="new" class="tabcontent">
+      <div class="item-body">
+              <a href="#"><img class="image" src="../static/images/1.jpg" width="40px" height="40px" alt="" /></a>
+              <a href="#" class="item-right">
+                29
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                1
+                <i class="fa fa-comments-o" aria-hidden="true"></i>
+            </a>
+            <div class="item-mid">
+                <div class="header">
+                    <a class="title" href="#">NoSQL DBMS - 1000 câu hỏi vì sao</a>
+                    <div class="tags">
+                        <a href="#" class="label">NoSQL</a>
+                        <a href="#" class="label">Database</a>
+                    </div>
+                </div>
+                <div class="detail"> Hẳn anh em ở đây không xa lạ gì với NoSQL DBMS lẫn thế mạnh của nó. Nhưng liệu chúng ta có thực sự hiểu nó? Trước tiên, ta cùng điểm qua những thế ... </div>
+                <div class="time">
+                    <a href="#">Trần Văn Hoàng</a>
+                    viết 5 ngày trước
+                </div>
+            </div>
+        </div> 
+  </div>
+
+  <div id="til" class="tabcontent">
+      <div class="item-body">
+              <a href="#"><img class="image" src="../static/images/1.jpg" width="40px" height="40px" alt="" /></a>
+              <a href="#" class="item-right">
+                29
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                1
+                <i class="fa fa-comments-o" aria-hidden="true"></i>
+            </a>
+            <div class="item-mid">
+                <div class="header">
+                    <a class="title" href="#">NoSQL DBMS - 1000 câu hỏi vì sao</a>
+                    <div class="tags">
+                        <a href="#" class="label">NoSQL</a>
+                        <a href="#" class="label">Database</a>
+                    </div>
+                </div>
+                <div class="detail"> Hẳn anh em ở đây không xa lạ gì với NoSQL DBMS lẫn thế mạnh của nó. Nhưng liệu chúng ta có thực sự hiểu nó? Trước tiên, ta cùng điểm qua những thế ... </div>
+                <div class="time">
+                    <a href="#">Trần Văn Hoàng</a>
+                    viết 5 ngày trước
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+<div class="col info">
+    <div class="row profile">
+        <div class="avatar-image">
+            <img src="../static/images/1.jpg" width="100px" height="100px">
+        </div>
+        <div class="right-image floated">
+            <a id="caption" href="#">
+                <h1>Trần Hoàng</h1>
+            </a>
+            <div id="extra">
+                <a href="#">0</a> bài viết <br /> <a href="#">0</a> người theo
+                dõi
+            </div>
+        </div>
+    </div>
+    <div class="row hot-tags">
+        <p id="suggest-title">
+            <i class="fa fa-tags"></i> Chủ đề nổi bật
+        </p>
+        <div class="meta-tags">
+            <a href="#" class="label">css</a> <a href="#" class="label">javascript</a>
+            <a href="#" class="label">python</a> <a href="#" class="label">javascript</a>
+            <a href="#" class="label">python</a> <a href="#"
+            class="label explore">Xem tất cả</a>
+        </div>
+    </div>
+    <div class="row authors">
+        <p id="authors-title">
+            <i class="fa fa-trophy"></i> Tác giả của tuần
+        </p>
+        <div class="list-author">
+            <div class="item">
+                <div class="avatar-author">
+                    <img
+                    src="https://znews-photo.zadn.vn/w660/Uploaded/pcckpqmv/2019_05_16/moonphotobackyard800x800.jpg">
+                </div>
+                <a href="#">Trần Văn Điệp</a>
+            </div>
+            <div class="item">
+                <div class="avatar-author">
+                    <img
+                    src="https://znews-photo.zadn.vn/w660/Uploaded/pcckpqmv/2019_05_16/moonphotobackyard800x800.jpg">
+                </div>
+                <a href="#">Kipalog</a>
+            </div>
+            <div class="item">
+                <div class="avatar-author">
+                    <img
+                    src="https://znews-photo.zadn.vn/w660/Uploaded/pcckpqmv/2019_05_16/moonphotobackyard800x800.jpg">
+                </div>
+                <a href="#">Kipalog</a>
+            </div>
+            <div class="item">
+                <div class="avatar-author">
+                    <img
+                    src="https://znews-photo.zadn.vn/w660/Uploaded/pcckpqmv/2019_05_16/moonphotobackyard800x800.jpg">
+                </div>
+                <a href="#">Kipalog</a>
+            </div>
+            <div class="item">
+                <div class="avatar-author">
+                    <img
+                    src="https://znews-photo.zadn.vn/w660/Uploaded/pcckpqmv/2019_05_16/moonphotobackyard800x800.jpg">
+                </div>
+                <a href="#">Kipalog</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
 </body>
+<script>
+    /* Thêm hoặc xóa class show ra khỏi phần tử */
+    function myFunction(id) {
+        document.getElementById(id).classList.toggle("show");
+    }
+        //lấy tất cả các button menu
+        var buttons = document.getElementsByClassName('dropbtn');
+        //lấy tất cả các thẻ chứa menu con
+        var contents = document.getElementsByClassName('dropdown-content');
+        //lặp qua tất cả các button menu và gán sự kiện
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function(){
+                //lấy value của button
+                var id = this.value;
+                //ẩn tất cả các menu con đang được hiển thị
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].classList.remove("show");
+                }
+                //hiển thị menu vừa được click
+                myFunction(id);
+            });
+        }
+        //nếu click ra ngoài các button thì ẩn tất cả các menu con
+        window.addEventListener("click", function(){
+         if (!event.target.matches('.dropbtn')){
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove("show");
+            }
+        }
+    });
+</script>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 </html>
