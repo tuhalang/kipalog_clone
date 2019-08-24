@@ -139,16 +139,23 @@ table {
     border-spacing: 0;
 }
 
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 
 /* Add a black background color to the top navigation */
 
 .topnav {
     background-color: #2c4762;
-    overflow: hidden;
+    height: 45px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 120px;
     padding-right: 120px;
+    z-index: 999;
 }
 
 
@@ -224,7 +231,8 @@ table {
 
 .dropdown {
     position: relative;
-    display: block;
+    display: inline-block;
+    margin-inline-end: 35px;
 }
 
 .dropbtn {
@@ -233,21 +241,30 @@ table {
 
 .drop-content {
     display: none;
+    position: absolute;
     background-color: white;
-    min-width: 160px;
+    min-width: 190px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-top: 50px;
-    overflow: visible;
-    position: absolute;
 }
 
 .drop-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 3px 20px;
+    padding-left: 10px;
     text-decoration: none;
+    font-size: 17px;
     text-align: left;
     display: block;
+    transition: margin-top 1s;
+}
+
+.drop-content a:hover,
+.drop-content a:active {
+    background-color: rgb(247, 245, 245);
+    margin-top: 30px;
+    border: none;
+    color: deepskyblue;
 }
 
 .dropdown:hover .drop-content {
