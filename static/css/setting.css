@@ -1,21 +1,109 @@
 /* CONTAINER START */
 
-.container {
+.gird-container {
+    display: grid;
     padding: 50px 200px;
     font-size: 20px;
-    font-weight: 500;
+    grid-template-columns: auto auto auto auto
 }
 
-.menu {}
+.menu {
+    font-weight: bold;
+}
 
 .menu-btn {
     padding: 15px 0px;
-    border-right: 1px solid #4f6a85;
-    padding-right: 150px;
+    border-right: 2px solid #4f6a85;
+    padding-right: 0px;
     cursor: pointer;
 }
 
-.container .content {
+.btn-password-active {
+    color: #A1CF64;
+    border-right: 2px solid #A1CF64;
+}
+
+.btn-account-active {
+    color: #00b5ad;
+    border-right: 2px solid #00b5ad;
+}
+
+.content-account {
     display: block;
     padding-left: 100px;
+    grid-column: 2/5;
+}
+
+.content-password {
+    display: none;
+    padding-left: 100px;
+    grid-column: 2/5;
+}
+
+.info {
+    padding: 10px 20px;
+}
+
+.title-info {
+    font-weight: 600;
+    color: #000000;
+    margin: 10px 0px;
+}
+
+.content-info {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    color: #a6a6a6;
+}
+
+.content-info p {
+    color: #000000;
+    font-size: 18px;
+}
+
+.content-info img {
+    border-radius: 100%;
+}
+
+.icon {
+    padding: 10px;
+    position: absolute;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.3125em;
+}
+
+.btn-submit {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 10px 40px;
+    background-color: #00B5AD;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-ignore {
+    color: #59b86f;
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: 20;
+    font-size: 15px;
+}
+
+.btn-password {
+    background-color: #59b86f;
+}
+
+.alert-password {
+    background-color: #EFEFEF;
+    padding: 15px 40px;
+    margin: 10px 10px;
+    border-radius: 10px;
 }

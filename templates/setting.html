@@ -37,34 +37,121 @@
                 bài</span></a>
     </div>
 
-    <div class="container">
+    <div class="gird-container">
+
         <div class="menu left">
-            <div class="menu-btn" id="account-btn">
+            <div class="menu-btn btn-account-active" id="account-btn">
                 <span>Tài khoản</span>
             </div>
             <div class="menu-btn" id="password-btn">
                 <span>Password</span>
             </div>
         </div>
-        <div class="content left">
-            <form>
-                <div>
-                    <span>Ảnh đại diện</span>
+
+        <div class="content-account left">
+            <form method="POST" action="">
+                <div class="info">
+                    <div class="title-info">
+                        <lable>Ảnh đại diện</lable>
+                    </div>
+                    <div class="content-info">
+                        <img src="../static/images/1.jpeg" alt="" width="80" height="80">
+                    </div>
                 </div>
-                <div>
-                    <label>Tên</lable>
-                    <input type="text" value="Phạm Hùng">
+                <div class="info">
+                    <div class="title-info">
+                        <label>Tên</lable>
+                    </div>
+                    <div class="content-info">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" value="Phạm Hùng">
+                    </div>
                 </div>
-                <div>
-                    <label>Nickname</label>
+                <div class="info">
+                    <div class="title-info">
+                        <label>Nickname</label>
+                    </div>
+                    <div class="content-info">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" value="tuhalang">
+                    </div>
                 </div>
-                <div>
-                    <label>Email</label>
+                <div class="info">
+                    <div class="title-info">
+                        <label>Email</label>
+                    </div>
+                    <div class="content-info">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" value="vanhung101299@gmail.com">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title-info">
+                        <label>RSS feed url</label>
+                    </div>
+                    <div class="content-info">
+                        <p>Bạn cần viết ít nhất 2 bài viết để được cấp quyền sử dụng RSS :)</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title-info">
+                        <label>Api Key</label>
+                    </div>
+                    <div class="content-info">
+                        <p>Bạn cần viết ít nhất 2 bài viết để được cấp quyền sử dụng API :)</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <button class="btn-submit" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                        <span>Đổi password</span></button>
                 </div>
             </form>
+        </div>
 
+        <div class="content-password left">
+            <form method="POST" action="">
+                <div class="alert-password info">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <span>Password phải có ít nhất 6 ký tự</span>
+                </div>
+                <div class="info">
+                    <div class="title-info">
+                        <label>Password hiện tại</label>
+                    </div>
+                    <div class="content-info">
+                        <i class="fa fa-lock icon" aria-hidden="true"></i>
+                        <input class="input-field" type="password">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title-info">
+                        <label>Password mới</label>
+                    </div>
+                    <div class="content-info">
+                        <i class="fa fa-lock icon" aria-hidden="true"></i>
+                        <input class="input-field" type="password">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title-info">
+                        <label>Xác nhận password</label>
+                    </div>
+                    <div class="content-info">
+                        <i class="fa fa-lock icon" aria-hidden="true"></i>
+                        <input class="input-field" type="password">
+                    </div>
+                </div>
+                <div class="info">
+                    <button class="btn-submit btn-password" type="submit"><i class="fa fa-floppy-o"
+                            aria-hidden="true"></i>
+                        <span>Đổi password</span></button>
+                    <a href="#" id="btn-ignore">Bỏ qua</a>
+                </div>
+            </form>
         </div>
     </div>
+
+    <script src="../static/js/setting.js"></script>
 </body>
 
 </html>

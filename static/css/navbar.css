@@ -273,22 +273,3 @@ table {
 
 
 /* END NAVBAR */
-
-
-/* CONTAINER START */
-
-.container {
-    padding: 50px 200px;
-}
-
-.menu {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.menu-btn {
-    padding: 15px 0px;
-    border-right: 1px solid #4f6a85;
-    padding-right: 150px;
-    cursor: pointer;
-}
