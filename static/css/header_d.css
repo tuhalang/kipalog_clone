@@ -22,6 +22,7 @@ header {
 .main-menu {
     list-style: none;
     display: inline-block;
+    margin-top: 10px;
 }
 
 .main-menu li {
@@ -33,16 +34,6 @@ header {
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
-}
-
-.newpost,
-.home,
-.log,
-.bell,
-.account .fa-caret-down {
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 
 .main-menu .dropdown-element .dropdown-content {
@@ -84,10 +75,6 @@ header {
     display: block;
 }
 
-.dropdown-content:hover {
-    display: block;
-}
-
 .main-menu .avatar-account {
     width: 30px;
     height: 30px;
@@ -103,6 +90,7 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 15px;
+    transform: translate(0px, 10px);
 }
 
 .logo-item,
@@ -133,6 +121,39 @@ header {
 
 #search-form input:focus {
     background-color: #ffffff;
+}
+
+.bell .top-notice p {
+    width: 378px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.top-notice .clear-all-notify .fa-check {
+    font-size: 13px;
+    display: none;
+}
+
+.top-notice .clear-all-notify:hover .fa-check {
+    display: inline-block;
+    color: deepskyblue;
+}
+
+.top-notice .clear-all-notify:hover {
+    color: deepskyblue;
+}
+
+.bell .dropdown-content {
+    transform: translate(-90%, 0);
+    overflow: hidden;
+}
+
+.bell .notices {
+    min-height: 70px;
+    padding: 1em 1em .5em 1em;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 
