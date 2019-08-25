@@ -58,7 +58,10 @@
                         <lable>Ảnh đại diện</lable>
                     </div>
                     <div class="content-info">
-                        <img src="../static/images/1.jpeg" alt="" width="80" height="80">
+                        <div id="block-avatar">
+                            <img id="avatar" src="../static/images/1.jpeg" alt="" width="80" height="80">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="info">
@@ -153,12 +156,24 @@
             </form>
         </div>
     </div>
+
+    <div id="myoverlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <div class="overlay-content">
+            <div id="title-notify">
+                <span>Nhập đường link ảnh muốn dùng làm ảnh đại diện</span>
+            </div>
+            <input id="url-field" type="text" placeholder="https://">
+            <button id="btn-save"><span class="text">Lưu</span> <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
     <div class="clearfix"></div>
     <footer>
         <div class="middle-container">
             <div class="left-menu">
                 <a href="#">Điều khoản</a> <a href="#">Phản hồi</a> <a href="#">Yêu
-					cầu</a> <a href="#">Fanpage</a>
+                    cầu</a> <a href="#">Fanpage</a>
             </div>
             <p>Copyright © 2018 Kipalog</p>
         </div>

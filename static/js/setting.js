@@ -1,4 +1,6 @@
 "use strict"
+
+// switch tab account and password
 const btn_password = document.getElementById('password-btn');
 const btn_account = document.getElementById('account-btn');
 const content_password = document.getElementsByClassName('content-password')[0];
@@ -17,4 +19,19 @@ btn_account.onclick = function() {
     content_password.style.display = 'none';
     btn_account.classList.add("btn-account-active");
     btn_password.classList.remove("btn-password-active");
+}
+
+const change_avatar = document.getElementById('block-avatar');
+
+change_avatar.onclick = openOverlay;
+
+
+/* Open */
+function openOverlay() {
+    document.getElementById("myoverlay").style.display = "block";
+}
+
+/* Close */
+function closeOverlay() {
+    document.getElementById("myoverlay").style.display = "none";
 }

@@ -63,8 +63,34 @@
     font-size: 18px;
 }
 
-.content-info img {
+#block-avatar {
+    width: 80px;
+    height: 80px;
+    padding: 0px;
     border-radius: 100%;
+    background-color: #a6a6a6;
+    color: white;
+    cursor: pointer;
+}
+
+#block-avatar i {
+    padding: 30px;
+}
+
+#avatar {
+    border-radius: 100%;
+    transition: transform 0.5s linear;
+    transform-origin: left bottom;
+    transform-style: preserve-3D;
+    position: absolute;
+}
+
+#block-avatar:hover #avatar {
+    transform: rotate(-120deg);
+}
+
+.img-rotate {
+    transform: rotate(-120deg);
 }
 
 .icon {
@@ -105,4 +131,62 @@
     padding: 15px 40px;
     margin: 10px 10px;
     border-radius: 10px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(54, 47, 47);
+}
+
+#url-field {
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#title-notify {
+    color: #00B5AD;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+#btn-save {
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #a6a6a6;
+    background-color: #191919;
+    border: none;
+}
+
+#btn-save span {
+    padding-right: 10px;
+}
+
+#btn-save:hover {
+    background-color: #262626;
 }
