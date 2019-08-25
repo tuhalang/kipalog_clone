@@ -211,21 +211,30 @@ table {
     padding-left: 10px;
 }
 
-.topnav .icon {
+.icon {
+    position: absolute;
+    display: block;
+    border: none;
+    color: rgb(27, 27, 24);
+    padding: 10px;
+}
+
+.icon-menu{
     display: block;
     border: none;
     color: beige;
     padding: 10px;
+    cursor: pointer;
 }
 
-.topnav .avatar {
+.avatar {
     display: block;
     border: none;
     color: beige;
     padding-left: 30px;
 }
 
-.topnav .avatar img {
+.avatar img {
     border-radius: 100%;
 }
 
