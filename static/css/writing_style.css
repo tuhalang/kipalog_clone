@@ -1,0 +1,75 @@
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+    
+    .full-height {
+        height: 100%;
+    }
+    
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+    
+    .container {
+        padding: 0 3% 0 3%;
+        margin: 5px;
+    }
+    
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    
+    .col-xs-6 {
+        width: 49%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .source {
+        width: 100%;
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        font-size: 16px;
+        padding: 5px;
+        border: none;
+        display: block;
+    }
+    
+    .source:focus {
+        outline: none;
+    }
+    
+    .demo-control {
+        border-radius: 0 0 6px 6px;
+        font-size: 12px;
+        background-color: #666;
+        color: #fff !important;
+        opacity: 0.6;
+        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+        display: block;
+        width: fit-content;
+        float: right;
+    }
+    
+    .demo-control a {
+        padding: 0 20px 0 20px;
+        color: #fff !important;
+        text-decoration: none;
+    }
+    
+    .demo-control a:hover strong {
+        text-decoration: #fff;
+        color: black;
+    }

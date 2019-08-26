@@ -166,6 +166,9 @@ header {
     .grid {
         width: 100%;
     }
+    .bell {
+        display: none !important;
+    }
 }
 
 @media all and (max-width: 992px) {
