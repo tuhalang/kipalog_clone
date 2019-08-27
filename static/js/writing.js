@@ -196,12 +196,6 @@
     // Init on page load
     //
     $(function() {
-        // highlight snippet
-        if (window.hljs) {
-            $('pre.code-example code').each(function(i, block) {
-                window.hljs.highlightBlock(block);
-            });
-        }
 
         // Restore content if opened by permalink
         if (location.hash && /^(#md=|#md64=)/.test(location.hash)) {
@@ -313,3 +307,50 @@
         updateResult();
     });
 })();
+
+
+//File chooser
+function chooseImage(event) {
+    var input = $(document.getElementById("image-filechooser"));
+    input.attr("type", "file");
+    input.attr("accept", "image/png, image/jpeg,image/jpg");
+    input.trigger("click");
+};
+
+function changeInput() {
+    console.log($(document.getElementById("image-filechooser")).val());
+    var valueTextArea = $(document.getElementsByClassName("source")).val();
+    var valueImage = $(document.getElementById("image-filechooser")).val();
+    $(document.getElementsByClassName("source")).val(valueTextArea + "![alt text](" + valueImage + ")");
+}
+// help markdown
+function helpMarkdown() {
+    $("#markdown-content")[0].style.display = "table";
+}
+
+function endHelp() {
+    $("#markdown-content")[0].style.display = "none";
+}
+
+function suggestTags() {
+    $(".suggest-tags")[0].style.display = "block";
+}
+
+$(".tags-item").click(function(event) {
+    alert(this.className);
+    // var x = document.createElement("li");
+    // x.className = "token-input-token";
+    // var y = document.createElement("p");
+    // var z = document.createElement("span");
+    // z.className = "count";
+    // z.innerHTML = "12";
+    // y.innerHTML = this.val();
+    // y.appendChild(z);
+    // z = document.createElement("span");
+    // z.className = "token-input-delete-token";
+    // z.innerHTML = "x";
+    // x.appendChild(y);
+    // x.appendChild(z);
+    // $(".token-input-list")[0].appendChild(x);
+    // $(".suggest-tags")[0].style.display = "none";
+});

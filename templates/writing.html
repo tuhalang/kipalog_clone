@@ -104,25 +104,149 @@
 
 
     <div class="clearfix"></div>
+    <!-- Title post -->
+    <div class="title-post">
+        <div class="feild">
+            <div class="fluid huge">
+                <input id="title-input" autocomplete="off" value="Your title" class="full-width">
+            </div>
+        </div>
+        <!-- tags  -->
+        <div class="feild">
+            <div class="fluid">
+                <ul class="token-input-list">
+                    <li class="token-input-token">
+                        <p>TIL <span class="count">720</span> </p>
+                        <span class="token-input-delete-token">×</span>
+                    </li>
+                    <input id="tag-input" autocomplete="off" onkeydown="suggestTags()">
+                </ul>
+            </div>
+            <div class="suggest-tags">
+                <ul class="tags-list">
+                    <li class="tags-item"><i class="fas fa-tag"></i> mysql</li>
+                    <li class="tags-item"><i class="fas fa-tag"></i> jdbc</li>
+                    <li class="tags-item"><i class="fas fa-tag"></i> java</li>
+                    <li class="tags-item"><i class="fas fa-tag"></i> markdown</li>
+                    <li class="tags-item"><i class="fas fa-tag"></i> c#</li>
+                </ul>
+            </div>
+        </div>
+        <!-- help link -->
+        <div class="help-annotation">
+            <i class="fas fa-question-circle"></i>
+            <a href="#" class="md-help-link" onclick="helpMarkdown()">Ngữ pháp markdown</a>
+            <div class="markdown-content" id="markdown-content" ondblclick="endHelp()">
+                <table class="basic-table">
+                    <thead>
+                        <tr>
+                            <th class="header">Hiển thị</th>
+                            <th class="header">Cách viết</th>
+                            <th class="header">Phím nhanh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- h3 -->
+                        <tr>
+                            <td>
+                                <h3>h1 ~ h6 tiêu đề</h3>
+                            </td>
+                            <td><pre>#h1, ##h2, ###h3 ... </pre></td>
+                            <td></td>
+                        </tr>
+                        <!-- bold -->
+                        <tr>
+                            <td><strong>In đậm</strong></td>
+                            <td><pre>**In đậm**</pre></td>
+                            <td>Ctrl/⌘ + B</td>
+                        </tr>
+                        <!-- italic -->
+                        <tr>
+                            <td><em>In nghiêng</em></td>
+                            <td><pre>*In nghiêng*</pre></td>
+                            <td>Ctrl/⌘ + I</td>
+                        </tr>
+                        <!-- Strike through -->
+                        <tr>
+                            <td><del>Gạch ngang</del></td>
+                            <td><pre>~~Gạch ngang~~</pre></td>
+                            <td>Ctrl/⌘ + Alt + U</td>
+                        </tr>
+                        <!-- Link -->
+                        <tr>
+                            <td><a href="">Link</a></td>
+                            <td><pre>[Link](http:...)</pre></td>
+                            <td>Ctrl/⌘ + K</td>
+                        </tr>
+                        <!-- Image -->
+                        <tr>
+                            <td>(Ảnh)</td>
+                            <td><pre>![alt](http://link-ảnh)</pre></td>
+                            <td>Ctrl/⌘ + Shift + I</td>
+                        </tr>
+                        <!-- code -->
+                        <tr>
+                            <td><code class="inline">code</code></td>
+                            <td><pre>`code`</pre></td>
+                            <td>Ctrl/⌘ + Shift + K</td>
+                        </tr>
+                        <!-- Code block-->
+                        <tr>
+                            <td><pre lang="python"><code class="hljs"><span class="hljs-keyword">import</span> os</code></pre></td>
+                            <td><pre>```python<br>import os<br>```</pre></td>
+                            <td></td>
+                        </tr>
+                        <!-- list -->
+                        <tr>
+                            <td>
+                                <ul class="ui list">
+                                    <li>Danh sách</li>
+                                </ul>
+                            </td>
+                            <td><pre>* Danh sách</pre></td>
+                            <td>Ctrl/⌘ + L</td>
+                        </tr>
+                        <!-- Quote -->
+                        <tr>
+                            <td>
+                                <blockquote>Trích dẫn</blockquote>
+                            </td>
+                            <td><pre>&gt; Trích dẫn</pre></td>
+                            <td>Ctrl/⌘ + U</td>
+                        </tr>
+                        <!-- Escape -->
+                        <tr>
+                            <td>'Escape', *symbol*</td>
+                            <td><pre>\'Escape\', \*symbol\*</pre></td>
+                            <td></td>
+                        </tr>
+                        <!-- Emoji -->
+                        <tr>
+                            <td><img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/smile.png" height="20" width="20" align="absmiddle"></td>
+                            <td><pre>:smile: </pre></td>
+                            <td><a target="_blank" href="http://www.emoji-cheat-sheet.com/">Toàn bộ Emoji</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p class="message">
+                    Trên đây là phần ngữ pháp cơ bản của Markdown. Bạn có thể tham khảo chi tiết hơn tại <a target="_blank" href="https://kipalog.com/markdown">bài viết hướng dẫn</a>.
+                </p>
+                <br>
+            </div>
+            <div class="preview-only right"><i class="fas fa-desktop"></i></div>
+            <div class="editor-preview right"><i class="fas fa-columns"></i></div>
+            <div class="editor-only right"><i class="fas fa-edit"></i></div>
+        </div>
+    </div>
     <!--Markdown        container-->
     <div class="container">
-        <div class="row full-height">
+        <div class="row">
             <div class="col-xs-6 left full-height">
-                <div class="demo-control">
-                    <a href="#" class="source-clear">clear</a>
-                    <a id="permalink" href="./" title="Share this snippet as link">
-                        <strong>permalink</strong>
-                    </a>
-                </div>
                 <textarea class="source full-height">##Yourtitle</textarea>
             </div>
             <section class="col-xs-6 right full-height">
-                <div class="demo-control">
-                    <a href="#" data-result-as="html">html</a>
-                    <a href="#" data-result-as="src">source</a>
-                    <a href="#" data-result-as="debug">debug</a>
-                </div>
-                <div class="result-html full-height"></div>
+                <div class="result-html full-height" style="overflow-y: auto;width:100%;overflow-wrap:break-word;"></div>
                 <pre class="result-src full-height">
                     <code class="result-src-content full-height"></code>
                 </pre>
@@ -131,6 +255,19 @@
                 </pre>
             </section>
         </div>
+    </div>
+
+    <!-- upload image -->
+    <div class="upload-image">
+        <i class="fas fa-question-circle"></i>
+        <span>Kéo thả / copy và paste ảnh vào editor hoặc <a id="fake-upload" onclick="chooseImage()">chọn ảnh</a> để upload</span>
+        <input type="file" id="image-filechooser" onchange="changeInput()">
+    </div>
+    <div class="next-button">
+        <div class="submit-button right">
+            <input type="submit" value="Đăng bài">
+        </div>
+        <div class="save-button right">Lưu nháp</div>
     </div>
 </body>
 
