@@ -144,6 +144,7 @@
         display: inline-block;
         background-color: #e8e8e8;
         margin: 0;
+        margin-left: 3px;
         padding: 0.5em;
         border-radius: 5px;
     }

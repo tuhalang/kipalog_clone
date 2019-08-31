@@ -336,21 +336,55 @@ function suggestTags() {
     $(".suggest-tags")[0].style.display = "block";
 }
 
-$(".tags-item").click(function(event) {
-    alert(this.className);
-    // var x = document.createElement("li");
-    // x.className = "token-input-token";
-    // var y = document.createElement("p");
-    // var z = document.createElement("span");
-    // z.className = "count";
-    // z.innerHTML = "12";
-    // y.innerHTML = this.val();
-    // y.appendChild(z);
-    // z = document.createElement("span");
-    // z.className = "token-input-delete-token";
-    // z.innerHTML = "x";
-    // x.appendChild(y);
-    // x.appendChild(z);
-    // $(".token-input-list")[0].appendChild(x);
-    // $(".suggest-tags")[0].style.display = "none";
+$(document).on('click', '.tags-item', function() {
+    createTag(this.innerHTML.substr(26) + " ", 12);
+    $(".suggest-tags")[0].style.display = "none";
+});
+
+function createTag(s, count) {
+    var x = document.createElement("li");
+    x.classList.add("token-input-token");
+    var y = document.createElement("p");
+    var z = document.createElement("span");
+    z.classList.add("count");
+    z.innerHTML = count;
+    y.innerHTML = s;
+    y.appendChild(z);
+    z = document.createElement("span");
+    z.classList.add("token-input-delete-token");
+    z.innerHTML = "×";
+    x.appendChild(y);
+    x.appendChild(z);
+    var last = document.getElementById('tag-input');
+    last.value = "";
+    $(".token-input-list")[0].insertBefore(x, last);
+    $(".suggest-tags")[0].style.display = "none";
+}
+$(document).on('click', '.token-input-delete-token', function() {
+    this.parentNode.parentNode.removeChild(this.parentNode);
+});
+$(document).on('click', '.editor-only', function() {
+    $('.col-xs-6.left.full-height').css('width', "100%");
+    $('.col-xs-6.left.full-height').css("display", "inline-block");
+    $('.col-xs-6.right.full-height').css("display", "none");
+    $('.editor-only').css('color', '#a1cf64');
+    $('.editor-preview').css('color', '#808080');
+    $('.preview-only').css('color', '#808080');
+});
+$(document).on('click', '.editor-preview', function() {
+    $('.col-xs-6.left.full-height').css('width', "49.5%");
+    $('.col-xs-6.right.full-height').css('width', "49.5%");
+    $('.col-xs-6.left.full-height').css("display", "inline-block");
+    $('.col-xs-6.right.full-height').css("display", "inline-block");
+    $('.editor-only').css('color', '#808080');
+    $('.editor-preview').css('color', '#a1cf64');
+    $('.preview-only').css('color', '#808080');
+});
+$(document).on('click', '.preview-only', function() {
+    $('.col-xs-6.right.full-height').css('width', "100%");
+    $('.col-xs-6.left.full-height').css("display", "none");
+    $('.col-xs-6.right.full-height').css("display", "inline-block");
+    $('.editor-only').css('color', '#808080');
+    $('.editor-preview').css('color', '#808080');
+    $('.preview-only').css('color', '#a1cf64');
 });
