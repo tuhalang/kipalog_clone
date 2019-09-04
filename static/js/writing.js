@@ -101,10 +101,12 @@
                     defaults: _.omit(defaults, 'highlight')
                 })));
             } else {
-                permalink.href = '';
+                if (permalink.href != null)
+                    permalink.href = '';
             }
         } catch (__) {
-            permalink.href = '';
+            if (permalink != null)
+                permalink.href = '';
         }
     };
 
